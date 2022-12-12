@@ -9,10 +9,8 @@ let userCtrl = UserController.getInstance();
 
 
 route.post('/addUser', userCtrl.addUser)
-route.get('/readUser', (req, res) => {
-
-
-})
+route.get('/findUser-by-id/', userCtrl.findUser)
+route.get('/all-users/', userCtrl.getAllUsers)
 route.post('/updateUser', (req, res) => {
 
 
